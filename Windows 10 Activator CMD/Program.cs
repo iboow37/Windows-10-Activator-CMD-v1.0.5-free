@@ -31,13 +31,14 @@ namespace Windows_10_Activator_CMD
 
             // Gerekirse cmd'ye otomatik olarak girişler yapmak için aşağıdaki satırları kullanabilirsiniz.
             // Örnek olarak "dir" komutunu ve ardından "exit" komutunu gönderiyoruz.
-            Thread.Sleep(2000);
+            Thread.Sleep(7000);
             cmdProcess.StandardInput.WriteLine("slmgr /ipk NW6C2-QMPVW-D7KKK-3GKT6-VCFB2");
-            Thread.Sleep(3000);
-            cmdProcess.StandardInput.WriteLine("slmgr /skms kms8.msguide.com");
-            Thread.Sleep(3000);
+            Thread.Sleep(7000);
+            cmdProcess.StandardInput.WriteLine("slmgr /skms kms8.msguides.com");
+            Thread.Sleep(7000);
             cmdProcess.StandardInput.WriteLine("slmgr /ato");
-            Thread.Sleep(2000);
+            Thread.Sleep(7000);
+            cmdProcess.StandardInput.WriteLine("slmgr /ato");
 
             cmdProcess.StandardInput.WriteLine("exit");
 
